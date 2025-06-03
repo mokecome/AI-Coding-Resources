@@ -1,21 +1,11 @@
 ## 目錄結構
-project-root/
-├── src/               # 源代码目录
-│   ├── main.py       # 主程序入口
-│   ├── utils/         # 工具模块
-│   │   ├── helpers.py# 辅助函数
-│   │   └── config.py # 配置文件
-│   └── models/        # 数据模型
-│       └── user.py    # 用户模型
-├── tests/             # 测试目录
-│   ├── unit/          # 单元测试
-│   │   └── test_utils.py
-│   └── integration/   # 集成测试
-│       └── test_api.py
-├── docs/              # 文档目录
-│   └── README.md      # 项目说明
-├── requirements.txt   # 依赖清单
-└── LICENSE            # 开源协议
+backend/
+  ├app/
+     ├api/ 
+     ├core/ #  核心功能模块，存放支撑整个项目运行的基础功能和全局配置，通常具有高复用性和低业务耦合性。
+     ├models/ # 数据模型模块，负责定义数据结构和数据库表结构，通常与业务逻辑解耦。            
+     └services/ # 业务逻辑模块，封装具体的业务操作，通常依赖 models 和 core 完成复杂功能。
+
 
 ## 1. API設計
 -设置API路由和控制器

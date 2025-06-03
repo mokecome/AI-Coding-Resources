@@ -171,7 +171,7 @@ backend/
 | user_agent   | text           | 使用者代理     |                |
 | created_at   | timestamp      | 操作時間       | DEFAULT NOW()  |
 
-## 3.安全實作
+## 3.安全實現
 -實現使用者身分驗證
 -設定基於角色的授權
 -新增API安全措施
